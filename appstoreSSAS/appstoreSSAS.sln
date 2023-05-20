@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "appstoreSSAS", "appstoreSSAS\appstoreSSAS.dwproj", "{E079000A-9FF7-4B51-8685-B232F4C63691}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E079000A-9FF7-4B51-8685-B232F4C63691}.Development|Default.ActiveCfg = Development
+		{E079000A-9FF7-4B51-8685-B232F4C63691}.Development|Default.Build.0 = Development
+		{E079000A-9FF7-4B51-8685-B232F4C63691}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45FE7CC0-FF82-45A8-B062-D3FE35E6936C}
+	EndGlobalSection
+EndGlobal

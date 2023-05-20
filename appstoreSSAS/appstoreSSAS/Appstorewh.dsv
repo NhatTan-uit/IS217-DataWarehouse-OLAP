@@ -1,0 +1,205 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5cbe63ce-cac3-47c0-957d-038968a36207" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Appstorewh</ID>
+  <Name>Appstorewh</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Appstorewh</DataSourceID>
+  <Schema>
+    <xs:schema id="Appstorewh" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Appstorewh" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="613b19ae-7eb9-43f5-8b2c-d4488395df32">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_fact_Appstore" msprop:design-time-name="0d96ef94-725b-43e5-b5a2-c9911d79c7cf" msprop:DbTableName="fact_Appstore" msprop:FriendlyName="fact_Appstore" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msprop:design-time-name="e83d43c9-277d-45fa-8b09-001aae0da9a5" msprop:DbColumnName="ID" msprop:FriendlyName="ID">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Average_x0020_User_x0020_Rating" msprop:design-time-name="6df618e8-ce6b-41be-9612-a9806f2da54e" msprop:DbColumnName="Average User Rating" msprop:FriendlyName="Average User Rating" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="User_x0020_Rating_x0020_Count" msprop:design-time-name="42714a91-6e25-4907-b5b1-ed9d4b31863f" msprop:DbColumnName="User Rating Count" msprop:FriendlyName="User Rating Count" type="xs:int" minOccurs="0" />
+                  <xs:element name="Price" msprop:design-time-name="6bb94563-c6d2-4803-a9f7-075a4cbdbee1" msprop:DbColumnName="Price" msprop:FriendlyName="Price" type="xs:double" minOccurs="0" />
+                  <xs:element name="Developer" msprop:design-time-name="50d72028-2165-4759-b752-ff2114bcc0aa" msprop:DbColumnName="Developer" msprop:FriendlyName="Developer" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Age_x0020_Rating" msprop:design-time-name="52b8619d-c121-40d5-ae38-5dd1a155f4f3" msprop:DbColumnName="Age Rating" msprop:FriendlyName="Age Rating" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Size" msprop:design-time-name="c66c4d92-7f51-4ace-81df-022896848993" msprop:DbColumnName="Size" msprop:FriendlyName="Size" type="xs:long" minOccurs="0" />
+                  <xs:element name="Primary_x0020_Genre" msprop:design-time-name="4a3be2d9-b413-4655-ba66-1788f4bf1e3a" msprop:DbColumnName="Primary Genre" msprop:FriendlyName="Primary Genre" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Original_x0020_Release_x0020_Date" msprop:design-time-name="2f464b72-ce9e-4064-b986-32ec3e7398ef" msprop:DbColumnName="Original Release Date" msprop:FriendlyName="Original Release Date" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_Developer" msprop:design-time-name="9ff2376e-406c-4b4f-9634-bcfb40b17182" msprop:DbTableName="dim_Developer" msprop:FriendlyName="dim_Developer" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Developer" msprop:design-time-name="c69f8599-5629-4b77-acb4-7cac8cd51432" msprop:DbColumnName="Developer" msprop:FriendlyName="Developer">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_AvgRating" msprop:design-time-name="ec416916-f724-4938-84b7-852e9f962faf" msprop:DbTableName="dim_AvgRating" msprop:FriendlyName="dim_AvgRating" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Average_x0020_User_x0020_Rating" msprop:design-time-name="1ccb3db7-5aa8-4b8b-8f93-7e2bc1433a0a" msprop:DbColumnName="Average User Rating" msprop:FriendlyName="Average User Rating">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_Time" msprop:design-time-name="3b7b95d7-33cf-4343-8c51-37b719ac6b7f" msprop:DbTableName="dim_Time" msprop:FriendlyName="dim_Time" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Original_x0020_Release_x0020_Date" msprop:design-time-name="7e3c0b87-dcde-4cb3-a17e-d71866777b08" msprop:DbColumnName="Original Release Date" msprop:FriendlyName="Original Release Date" type="xs:dateTime" />
+                  <xs:element name="Month" msprop:design-time-name="345a1df1-a39a-49f4-ac9b-08de4455a1f5" msprop:DbColumnName="Month" msprop:FriendlyName="Month" type="xs:int" minOccurs="0" />
+                  <xs:element name="Year" msprop:design-time-name="9c95c5cd-8786-4783-9e01-3d5120a7d9b3" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="Quarter" msprop:design-time-name="0ce1527d-c727-4015-9f7b-b3a9623a49f2" msprop:DbColumnName="Quarter" msprop:FriendlyName="Quarter" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_AgeRating" msprop:design-time-name="fe6eda61-47d2-41f1-805b-0911e7e247b4" msprop:DbTableName="dim_AgeRating" msprop:FriendlyName="dim_AgeRating" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Age_x0020_Rating" msprop:design-time-name="1e1eb865-3d30-4613-b1a8-db9cc29b123f" msprop:DbColumnName="Age Rating" msprop:FriendlyName="Age Rating">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_PrimaryGenre" msprop:design-time-name="d91b534b-3b95-4041-b416-fdfd4ed593e5" msprop:DbTableName="dim_PrimaryGenre" msprop:FriendlyName="dim_PrimaryGenre" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Primary_x0020_Genre" msprop:design-time-name="73f2460e-410a-4e22-8fe0-3fef6e4976c3" msprop:DbColumnName="Primary Genre" msprop:FriendlyName="Primary Genre">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_fact_Appstore" />
+          <xs:field xpath="ID" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_Developer_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_Developer" />
+          <xs:field xpath="Developer" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_AvgRating_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_AvgRating" />
+          <xs:field xpath="Average_x0020_User_x0020_Rating" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_Time_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_Time" />
+          <xs:field xpath="Original_x0020_Release_x0020_Date" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_AgeRating_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_AgeRating" />
+          <xs:field xpath="Age_x0020_Rating" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_PrimaryGenre_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_PrimaryGenre" />
+          <xs:field xpath="Primary_x0020_Genre" />
+        </xs:unique>
+        <xs:keyref name="FK_fact_Appstore_dim_AgeRating" refer="dbo_dim_AgeRating_Constraint1">
+          <xs:selector xpath=".//dbo_fact_Appstore" />
+          <xs:field xpath="Age_x0020_Rating" />
+        </xs:keyref>
+        <xs:keyref name="FK_fact_Appstore_dim_Time" refer="dbo_dim_Time_Constraint1">
+          <xs:selector xpath=".//dbo_fact_Appstore" />
+          <xs:field xpath="Original_x0020_Release_x0020_Date" />
+        </xs:keyref>
+        <xs:keyref name="FK_fact_Appstore_dim_Developer" refer="dbo_dim_Developer_Constraint1">
+          <xs:selector xpath=".//dbo_fact_Appstore" />
+          <xs:field xpath="Developer" />
+        </xs:keyref>
+        <xs:keyref name="FK_fact_Appstore_dim_PrimaryGenre" refer="dbo_dim_PrimaryGenre_Constraint1">
+          <xs:selector xpath=".//dbo_fact_Appstore" />
+          <xs:field xpath="Primary_x0020_Genre" />
+        </xs:keyref>
+        <xs:keyref name="FK_fact_Appstore_dim_AvgRating" refer="dbo_dim_AvgRating_Constraint1">
+          <xs:selector xpath=".//dbo_fact_Appstore" />
+          <xs:field xpath="Average_x0020_User_x0020_Rating" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Appstorewh xmlns="" />
+  </Schema>
+</DataSourceView>
